@@ -1,0 +1,16 @@
+{
+    "name": "herilalah/blog",
+    "description": "\"This is a blog management\"",
+    "authors": [
+        {
+            "name": "Herilala Rakotonasolo",
+            "email": "herilalah.rakotonasolo@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Router\\" : "routes/"
+        }
+    },
+    "require": {}
+}
