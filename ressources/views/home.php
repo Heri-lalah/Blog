@@ -11,5 +11,8 @@
         Eum vitae fuga veritatis esse ipsa nesciunt voluptatibus?
         Explicabo deserunt quod, eius numquam labore porro, culpa quas, reiciendis in tempora quaerat repudiandae?
     </p>
+    <p>
+        <?php var_dump($users)?>
+    </p>
 </body>
 </html>

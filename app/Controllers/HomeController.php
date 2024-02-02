@@ -9,7 +9,9 @@ class HomeController
     public function index()
     {
 
-        return View::render('home');
+        $users = [1,2,3];
+
+        return View::render('home', compact('users'));
 
     }
 }
