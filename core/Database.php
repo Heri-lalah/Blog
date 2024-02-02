@@ -25,7 +25,7 @@ class Database
         }
     }
 
-    public function getPdo() : \PDO
+    public static function getPdo() : \PDO
     {
         new Database();
 

@@ -3,17 +3,17 @@ namespace Core;
 
 class Model extends Database
 {
-    protected string $table = "";
+    protected static string $table = "";
 
     public function __construct()
     {
-        $this->table = strtolower(explode("\\", get_class($this))[2]) . "s";
+        static::$table = strtolower(explode("\\", get_class($this))[2]) . "s";
     }
 
-    public function all()
+    public static function All()
     {
 
-        $statement = $this->getPdo()->query("SELECT * FROM {$this->table}");
+        $statement = static::getPdo()->query("SELECT * FROM " . static::$table);
 
         return $statement->fetchAll();
     }

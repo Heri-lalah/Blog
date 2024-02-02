@@ -10,7 +10,7 @@ class HomeController
     public function index()
     {
 
-        $users = (new User())->all();
+        $users = User::All();
 
         return View::render('home', compact('users'));
 
