@@ -12,7 +12,11 @@
         Explicabo deserunt quod, eius numquam labore porro, culpa quas, reiciendis in tempora quaerat repudiandae?
     </p>
     <p>
-        <?php var_dump($users)?>
+        <ul>
+            <?php foreach($users as $user) : ?>
+               <li><?php echo $user->name ?></li>
+            <?php endforeach?>
+        </ul>
     </p>
 </body>
 </html>

@@ -12,8 +12,6 @@ class Model extends Database
 
     public function all()
     {
-        var_dump($this->getPdo());
-        die();
 
         $statement = $this->getPdo()->query("SELECT * FROM {$this->table}");
 
